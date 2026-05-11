@@ -19,11 +19,20 @@ My custom desktop pets for [Codex](https://openai.com/codex) and [Clawd on Desk]
 ├── codex/
 │   ├── pet.json            # Codex pet manifest
 │   └── spritesheet.webp    # 1536×1872 sprite atlas (8×9 grid, 192×208 per frame)
-└── clawd-on-desk/
-    ├── theme.json           # Clawd on Desk theme config
-    ├── assets/              # APNG animations for each state
-    ├── *-contact-sheet.png  # Reference contact sheet
-    └── codex-spritesheet-source.webp
+├── clawd-on-desk/
+│   ├── theme.json           # Clawd on Desk theme config
+│   ├── assets/              # APNG animations for each state
+│   ├── *-contact-sheet.png  # Reference contact sheet
+│   └── codex-spritesheet-source.webp
+└── source/                  # Original hatch-pet generation assets
+    ├── pet_request.json     # Generation request config
+    ├── imagegen-jobs.json   # Image generation job records
+    ├── prompts/             # Prompts used for generation
+    ├── references/          # Reference images
+    ├── decoded/             # Decoded individual row images
+    ├── frames/              # Frame extraction data
+    ├── qa/                  # QA contact sheets and review data
+    └── final/               # Final spritesheet output
 ```
 
 ## Quick Install (macOS)

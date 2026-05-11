@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "run_dir": "/Users/xueyuan/Downloads/potato/potato-hatch-run-refined",
+  "spritesheet": "/Users/xueyuan/Downloads/potato/potato-hatch-run-refined/final/spritesheet.webp",
+  "validation": "/Users/xueyuan/Downloads/potato/potato-hatch-run-refined/final/validation.json",
+  "contact_sheet": "/Users/xueyuan/Downloads/potato/potato-hatch-run-refined/qa/contact-sheet.png",
+  "review": "/Users/xueyuan/Downloads/potato/potato-hatch-run-refined/qa/review.json",
+  "videos": "/Users/xueyuan/Downloads/potato/potato-hatch-run-refined/qa/videos",
+  "package": "/Users/xueyuan/.codex/pets/potato"
+}

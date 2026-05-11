@@ -19,11 +19,20 @@
 ├── codex/
 │   ├── pet.json            # Codex 宠物配置文件
 │   └── spritesheet.webp    # 1536×1872 精灵图集（8×9 网格，每帧 192×208）
-└── clawd-on-desk/
-    ├── theme.json           # Clawd on Desk 主题配置
-    ├── assets/              # 各状态的 APNG 动画
-    ├── *-contact-sheet.png  # 参考总览图
-    └── codex-spritesheet-source.webp
+├── clawd-on-desk/
+│   ├── theme.json           # Clawd on Desk 主题配置
+│   ├── assets/              # 各状态的 APNG 动画
+│   ├── *-contact-sheet.png  # 参考总览图
+│   └── codex-spritesheet-source.webp
+└── source/                  # 原始 hatch-pet 生成素材
+    ├── pet_request.json     # 生成请求配置
+    ├── imagegen-jobs.json   # 图片生成任务记录
+    ├── prompts/             # 生成用的提示词
+    ├── references/          # 参考图片
+    ├── decoded/             # 解码后的单行图片
+    ├── frames/              # 帧提取数据
+    ├── qa/                  # QA 总览图和审核数据
+    └── final/               # 最终精灵图输出
 ```
 
 ## 一键安装（macOS）

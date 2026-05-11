@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "run_dir": "/Users/xueyuan/Downloads/cheese/hatch-pet-run-codex",
+  "spritesheet": "/Users/xueyuan/Downloads/cheese/hatch-pet-run-codex/final/spritesheet.webp",
+  "validation": "/Users/xueyuan/Downloads/cheese/hatch-pet-run-codex/final/validation.json",
+  "contact_sheet": "/Users/xueyuan/Downloads/cheese/hatch-pet-run-codex/qa/contact-sheet.png",
+  "review": "/Users/xueyuan/Downloads/cheese/hatch-pet-run-codex/qa/review.json",
+  "videos": "/Users/xueyuan/Downloads/cheese/hatch-pet-run-codex/qa/videos",
+  "package": "/Users/xueyuan/.codex/pets/cheese"
+}
