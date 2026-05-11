@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "name": "Cheese",
+  "author": "xueyuan / Codex",
+  "version": "1.0.0",
+  "description": "A short-legged, chubby, baby-faced blue-and-white British Shorthair desktop companion converted from the Codex Cheese pet.",
+  "viewBox": {
+    "x": 0,
+    "y": 0,
+    "width": 266,
+    "height": 200
+  },
+  "layout": {
+    "contentBox": {
+      "x": 50,
+      "y": 8,
+      "width": 166,
+      "height": 182
+    },
+    "centerX": 133,
+    "baselineY": 190,
+    "visibleHeightRatio": 0.38,
+    "baselineBottomRatio": 0.05
+  },
+  "eyeTracking": {
+    "enabled": false,
+    "states": []
+  },
+  "states": {
+    "idle": [
+      "cheese-idle.apng"
+    ],
+    "yawning": [
+      "cheese-yawning.apng"
+    ],
+    "dozing": [
+      "cheese-dozing.apng"
+    ],
+    "collapsing": [
+      "cheese-collapsing.apng"
+    ],
+    "thinking": [
+      "cheese-thinking.apng"
+    ],
+    "working": [
+      "cheese-working-typing.apng"
+    ],
+    "juggling": [
+      "cheese-working-juggling.apng"
+    ],
+    "sweeping": [
+      "cheese-working-sweeping.apng"
+    ],
+    "error": [
+      "cheese-error.apng"
+    ],
+    "attention": [
+      "cheese-happy.apng"
+    ],
+    "notification": [
+      "cheese-notification.apng"
+    ],
+    "carrying": [
+      "cheese-working-carrying.apng"
+    ],
+    "sleeping": [
+      "cheese-sleeping.apng"
+    ],
+    "waking": [
+      "cheese-waking.apng"
+    ]
+  },
+  "sleepSequence": {
+    "mode": "full"
+  },
+  "workingTiers": [
+    {
+      "minSessions": 3,
+      "file": "cheese-working-building.apng"
+    },
+    {
+      "minSessions": 2,
+      "file": "cheese-working-juggling.apng"
+    },
+    {
+      "minSessions": 1,
+      "file": "cheese-working-typing.apng"
+    }
+  ],
+  "jugglingTiers": [
+    {
+      "minSessions": 2,
+      "file": "cheese-working-conducting.apng"
+    },
+    {
+      "minSessions": 1,
+      "file": "cheese-working-juggling.apng"
+    }
+  ],
+  "idleAnimations": [
+    {
+      "file": "cheese-idle.apng",
+      "duration": 5200
+    }
+  ],
+  "displayHintMap": {
+    "clawd-working-building.svg": "cheese-working-building.apng",
+    "clawd-working-typing.svg": "cheese-working-typing.apng",
+    "clawd-working-juggling.svg": "cheese-working-juggling.apng",
+    "clawd-working-conducting.svg": "cheese-working-conducting.apng",
+    "clawd-working-thinking.svg": "cheese-thinking.apng"
+  },
+  "timings": {
+    "minDisplay": {
+      "attention": 3200,
+      "error": 3600,
+      "sweeping": 4200,
+      "notification": 3200,
+      "carrying": 2600,
+      "working": 1000,
+      "thinking": 1000
+    },
+    "autoReturn": {
+      "attention": 3200,
+      "error": 3600,
+      "sweeping": 300000,
+      "notification": 3200,
+      "carrying": 2600
+    },
+    "dndSkipYawn": true,
+    "collapseDuration": 4200,
+    "yawnDuration": 2600,
+    "wakeDuration": 1800,
+    "deepSleepTimeout": 600000,
+    "mouseIdleTimeout": 20000,
+    "mouseSleepTimeout": 60000
+  },
+  "hitBoxes": {
+    "default": {
+      "x": 52,
+      "y": 12,
+      "w": 162,
+      "h": 178
+    },
+    "sleeping": {
+      "x": 44,
+      "y": 28,
+      "w": 178,
+      "h": 156
+    },
+    "wide": {
+      "x": 40,
+      "y": 8,
+      "w": 186,
+      "h": 182
+    }
+  },
+  "wideHitboxFiles": [
+    "cheese-error.apng",
+    "cheese-notification.apng",
+    "cheese-working-conducting.apng",
+    "cheese-working-sweeping.apng",
+    "cheese-working-carrying.apng"
+  ],
+  "sleepingHitboxFiles": [
+    "cheese-sleeping.apng",
+    "cheese-collapsing.apng"
+  ],
+  "reactions": {
+    "drag": {
+      "file": "cheese-react-drag.apng"
+    },
+    "clickLeft": {
+      "file": "cheese-react-poke.apng",
+      "duration": 2500
+    },
+    "clickRight": {
+      "file": "cheese-react-poke.apng",
+      "duration": 2500
+    },
+    "double": {
+      "files": [
+        "cheese-happy.apng"
+      ],
+      "duration": 3000
+    }
+  },
+  "miniMode": {
+    "supported": true,
+    "flipAssets": true,
+    "offsetRatio": 0.4,
+    "states": {
+      "mini-idle": [
+        "cheese-mini-idle.apng"
+      ],
+      "mini-alert": [
+        "cheese-mini-alert.apng"
+      ],
+      "mini-happy": [
+        "cheese-mini-happy.apng"
+      ],
+      "mini-enter": [
+        "cheese-mini-enter.apng"
+      ],
+      "mini-peek": [
+        "cheese-mini-peek.apng"
+      ],
+      "mini-crabwalk": [
+        "cheese-mini-crabwalk.apng"
+      ],
+      "mini-enter-sleep": [
+        "cheese-mini-sleep.apng"
+      ],
+      "mini-sleep": [
+        "cheese-mini-sleep.apng"
+      ]
+    },
+    "timings": {
+      "minDisplay": {
+        "mini-alert": 3000,
+        "mini-happy": 3000,
+        "mini-peek": 1500
+      },
+      "autoReturn": {
+        "mini-alert": 3000,
+        "mini-happy": 3000,
+        "mini-peek": 1500
+      }
+    }
+  },
+  "transitions": {
+    "cheese-idle.apng": {
+      "out": 220
+    },
+    "cheese-happy.apng": {
+      "in": 120,
+      "out": 300
+    },
+    "cheese-error.apng": {
+      "in": 120,
+      "out": 360
+    },
+    "cheese-sleeping.apng": {
+      "in": 240
+    },
+    "cheese-waking.apng": {
+      "out": 220
+    }
+  }
+}

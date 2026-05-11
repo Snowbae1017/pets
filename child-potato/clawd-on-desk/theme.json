@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "name": "Child Potato",
+  "author": "xueyuan / Codex",
+  "version": "1.0.0",
+  "description": "A child refined champagne teddy-bear-like poodle-bichon desktop companion converted from the Codex PotatoRefine pet.",
+  "viewBox": {
+    "x": 0,
+    "y": 0,
+    "width": 266,
+    "height": 200
+  },
+  "layout": {
+    "contentBox": {
+      "x": 50,
+      "y": 8,
+      "width": 166,
+      "height": 182
+    },
+    "centerX": 133,
+    "baselineY": 190,
+    "visibleHeightRatio": 0.38,
+    "baselineBottomRatio": 0.05
+  },
+  "eyeTracking": {
+    "enabled": false,
+    "states": []
+  },
+  "states": {
+    "idle": [
+      "potato-adult-idle.apng"
+    ],
+    "yawning": [
+      "potato-adult-yawning.apng"
+    ],
+    "dozing": [
+      "potato-adult-dozing.apng"
+    ],
+    "collapsing": [
+      "potato-adult-collapsing.apng"
+    ],
+    "thinking": [
+      "potato-adult-thinking.apng"
+    ],
+    "working": [
+      "potato-adult-working-typing.apng"
+    ],
+    "juggling": [
+      "potato-adult-working-juggling.apng"
+    ],
+    "sweeping": [
+      "potato-adult-working-sweeping.apng"
+    ],
+    "error": [
+      "potato-adult-error.apng"
+    ],
+    "attention": [
+      "potato-adult-happy.apng"
+    ],
+    "notification": [
+      "potato-adult-notification.apng"
+    ],
+    "carrying": [
+      "potato-adult-working-carrying.apng"
+    ],
+    "sleeping": [
+      "potato-adult-sleeping.apng"
+    ],
+    "waking": [
+      "potato-adult-waking.apng"
+    ]
+  },
+  "sleepSequence": {
+    "mode": "full"
+  },
+  "workingTiers": [
+    {
+      "minSessions": 3,
+      "file": "potato-adult-working-building.apng"
+    },
+    {
+      "minSessions": 2,
+      "file": "potato-adult-working-juggling.apng"
+    },
+    {
+      "minSessions": 1,
+      "file": "potato-adult-working-typing.apng"
+    }
+  ],
+  "jugglingTiers": [
+    {
+      "minSessions": 2,
+      "file": "potato-adult-working-conducting.apng"
+    },
+    {
+      "minSessions": 1,
+      "file": "potato-adult-working-juggling.apng"
+    }
+  ],
+  "idleAnimations": [
+    {
+      "file": "potato-adult-idle.apng",
+      "duration": 5200
+    }
+  ],
+  "displayHintMap": {
+    "clawd-working-building.svg": "potato-adult-working-building.apng",
+    "clawd-working-typing.svg": "potato-adult-working-typing.apng",
+    "clawd-working-juggling.svg": "potato-adult-working-juggling.apng",
+    "clawd-working-conducting.svg": "potato-adult-working-conducting.apng",
+    "clawd-working-thinking.svg": "potato-adult-thinking.apng"
+  },
+  "timings": {
+    "minDisplay": {
+      "attention": 3200,
+      "error": 3600,
+      "sweeping": 4200,
+      "notification": 3200,
+      "carrying": 2600,
+      "working": 1000,
+      "thinking": 1000
+    },
+    "autoReturn": {
+      "attention": 3200,
+      "error": 3600,
+      "sweeping": 300000,
+      "notification": 3200,
+      "carrying": 2600
+    },
+    "dndSkipYawn": true,
+    "collapseDuration": 4200,
+    "yawnDuration": 2600,
+    "wakeDuration": 1800,
+    "deepSleepTimeout": 600000,
+    "mouseIdleTimeout": 20000,
+    "mouseSleepTimeout": 60000
+  },
+  "hitBoxes": {
+    "default": {
+      "x": 72,
+      "y": 20,
+      "w": 122,
+      "h": 170
+    },
+    "sleeping": {
+      "x": 62,
+      "y": 48,
+      "w": 142,
+      "h": 136
+    },
+    "wide": {
+      "x": 50,
+      "y": 8,
+      "w": 166,
+      "h": 182
+    }
+  },
+  "wideHitboxFiles": [
+    "potato-adult-error.apng",
+    "potato-adult-notification.apng",
+    "potato-adult-working-conducting.apng",
+    "potato-adult-working-sweeping.apng",
+    "potato-adult-working-carrying.apng"
+  ],
+  "sleepingHitboxFiles": [
+    "potato-adult-sleeping.apng",
+    "potato-adult-collapsing.apng"
+  ],
+  "reactions": {
+    "drag": {
+      "file": "potato-adult-react-drag.apng"
+    },
+    "clickLeft": {
+      "file": "potato-adult-react-poke.apng",
+      "duration": 2500
+    },
+    "clickRight": {
+      "file": "potato-adult-react-poke.apng",
+      "duration": 2500
+    },
+    "double": {
+      "files": [
+        "potato-adult-happy.apng"
+      ],
+      "duration": 3000
+    }
+  },
+  "miniMode": {
+    "supported": true,
+    "flipAssets": true,
+    "offsetRatio": 0.4,
+    "states": {
+      "mini-idle": [
+        "potato-adult-mini-idle.apng"
+      ],
+      "mini-alert": [
+        "potato-adult-mini-alert.apng"
+      ],
+      "mini-happy": [
+        "potato-adult-mini-happy.apng"
+      ],
+      "mini-enter": [
+        "potato-adult-mini-enter.apng"
+      ],
+      "mini-peek": [
+        "potato-adult-mini-peek.apng"
+      ],
+      "mini-crabwalk": [
+        "potato-adult-mini-crabwalk.apng"
+      ],
+      "mini-enter-sleep": [
+        "potato-adult-mini-sleep.apng"
+      ],
+      "mini-sleep": [
+        "potato-adult-mini-sleep.apng"
+      ]
+    },
+    "timings": {
+      "minDisplay": {
+        "mini-alert": 3000,
+        "mini-happy": 3000,
+        "mini-peek": 1500
+      },
+      "autoReturn": {
+        "mini-alert": 3000,
+        "mini-happy": 3000,
+        "mini-peek": 1500
+      }
+    }
+  },
+  "transitions": {
+    "potato-adult-idle.apng": {
+      "out": 220
+    },
+    "potato-adult-happy.apng": {
+      "in": 120,
+      "out": 300
+    },
+    "potato-adult-error.apng": {
+      "in": 120,
+      "out": 360
+    },
+    "potato-adult-sleeping.apng": {
+      "in": 240
+    },
+    "potato-adult-waking.apng": {
+      "out": 220
+    }
+  }
+}
