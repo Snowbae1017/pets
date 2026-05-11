@@ -24,15 +24,16 @@ My custom desktop pets for [Codex](https://openai.com/codex) and [Clawd on Desk]
 │   ├── assets/              # APNG animations for each state
 │   ├── *-contact-sheet.png  # Reference contact sheet
 │   └── codex-spritesheet-source.webp
-└── source/                  # Original hatch-pet generation assets
-    ├── pet_request.json     # Generation request config
-    ├── imagegen-jobs.json   # Image generation job records
-    ├── prompts/             # Prompts used for generation
-    ├── references/          # Reference images
-    ├── decoded/             # Decoded individual row images
-    ├── frames/              # Frame extraction data
-    ├── qa/                  # QA contact sheets and review data
-    └── final/               # Final spritesheet output
+└── source/
+    └── <hatch-run-name>/    # Original hatch-pet generation assets
+        ├── pet_request.json     # Generation request config
+        ├── imagegen-jobs.json   # Image generation job records
+        ├── prompts/             # Prompts used for generation
+        ├── references/          # Reference images
+        ├── decoded/             # Decoded individual row images
+        ├── frames/              # Frame extraction data
+        ├── qa/                  # QA contact sheets and review data
+        └── final/               # Final spritesheet output
 ```
 
 ## Quick Install (macOS)
