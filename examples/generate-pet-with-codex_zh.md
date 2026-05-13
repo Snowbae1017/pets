@@ -13,11 +13,13 @@
 打开 Codex App，新建会话，输入：
 
 ```
-我想要用我家宠物生成一个桌面电子宠物，我家宠物的照片已经在 ~/Downloads/cheese
+我想要用我家宠物生成一个桌面电子宠物，我家宠物的照片已经在 <你的宠物照片路径>
 这个文件夹下了，有 face look 也有 body 照片, 这是一只短腿胖乎乎的蓝白英短,
 你要按照 codex APP 的宠物的要求来帮我生成哦，生成的宠物要保留真实宠物的毛流感
 和神态，不要过于动画化。你生成的 base 图片要先给我评审，我认可了你再继续图像生成。
 ```
+
+> 将 `<你的宠物照片路径>` 替换为实际路径，如 `~/Downloads/cheese`。
 
 > **提示：** Codex CLI（`codex` 命令行）也支持同样的 prompt。
 
@@ -170,18 +172,22 @@ Codex 宠物完成后，可以复用生成过程的素材（base 精灵图、参
 
 ```
 我已经用 Codex 为我的猫 Cheese 生成了桌面宠物，生成素材在
-~/Downloads/cheese/hatch-pet-run-codex/（包含 base 精灵图、参考照片、
-解码后的行条带、逐帧图片）。
+<hatch-run 路径>/（包含 base 精灵图、参考照片、解码后的行条带、逐帧图片）。
 
 现在我想为同一只宠物生成 Clawd on Desk 主题。请参考
-~/pets/baby-potato/clawd-on-desk/（theme.json + assets/）作为输出格式的
-结构示例，包括状态映射、viewBox、transitions、mini states 等。
+<参考主题路径>/（theme.json + assets/）作为输出格式的结构示例，
+包括状态映射、viewBox、transitions、mini states 等。
 
 为所有 Clawd on Desk 所需状态生成 APNG 动画（idle、thinking、各种 working
 变体、error、sleeping、waking、yawning、dozing、collapsing、notification、
 attention、reactions、mini states）。保持 Cheese 的身份与已通过审核的 Codex
-base 精灵图一致。输出到 ~/Downloads/cheese/clawd-on-desk/。
+base 精灵图一致。输出到 <输出路径>/clawd-on-desk/。
 ```
+
+> 替换占位符：
+> - `<hatch-run 路径>` — Codex 生成的素材目录，如 `~/Downloads/cheese/hatch-pet-run-codex`
+> - `<参考主题路径>` — 已有的 Clawd on Desk 主题作为结构参考，如 `~/pets/baby-potato/clawd-on-desk`
+> - `<输出路径>` — 新主题输出位置，如 `~/Downloads/cheese`
 
 ### Agent 执行流程
 

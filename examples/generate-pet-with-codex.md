@@ -14,13 +14,15 @@ Open Codex App, start a new session, and enter:
 
 ```
 I want to generate a desktop digital pet from my real pet's photos. The photos are
-in ~/Downloads/cheese — there are face/look shots and body shots. She's a short-legged,
-chubby blue-and-white British Shorthair cat. Please follow the Codex App pet requirements
-to generate the sprites. The generated pet should preserve the real cat's fur flow
-texture and expression/demeanor — don't make it overly cartoony or anime-like.
-Show me the base image for review first — only continue with the rest of the animation
-generation after I approve it.
+in <path-to-your-pet-photos> — there are face/look shots and body shots. She's a
+short-legged, chubby blue-and-white British Shorthair cat. Please follow the Codex
+App pet requirements to generate the sprites. The generated pet should preserve the
+real cat's fur flow texture and expression/demeanor — don't make it overly cartoony
+or anime-like. Show me the base image for review first — only continue with the rest
+of the animation generation after I approve it.
 ```
+
+> Replace `<path-to-your-pet-photos>` with your actual folder path, e.g. `~/Downloads/cheese`.
 
 > **Tip:** Codex CLI (`codex`) also supports this — just run the same prompt in terminal.
 
@@ -174,19 +176,23 @@ In a new Codex App / Codex CLI session (or Claude Code with image generation cap
 
 ```
 I've already generated a Codex desktop pet for my cat Cheese. The generation assets
-are in ~/Downloads/cheese/hatch-pet-run-codex/ (includes base sprite, reference photos,
-decoded row strips, and individual frames).
+are in <path-to-hatch-run>/ (includes base sprite, reference photos, decoded row
+strips, and individual frames).
 
 Now I want to generate a Clawd on Desk theme for the same pet. Please reference the
-existing theme in ~/pets/baby-potato/clawd-on-desk/ (theme.json + assets/) as a
-structural example for the output format, state mapping, viewBox, transitions, mini
-states, etc.
+existing theme in <path-to-reference-theme>/ (theme.json + assets/) as a structural
+example for the output format, state mapping, viewBox, transitions, mini states, etc.
 
 Generate APNG animations for all required Clawd on Desk states (idle, thinking,
 working variants, error, sleeping, waking, yawning, dozing, collapsing, notification,
 attention, reactions, mini states). Keep Cheese's identity consistent with the approved
-Codex base sprite. Output to ~/Downloads/cheese/clawd-on-desk/.
+Codex base sprite. Output to <output-path>/clawd-on-desk/.
 ```
+
+> Replace the placeholders:
+> - `<path-to-hatch-run>` — your Codex generation folder, e.g. `~/Downloads/cheese/hatch-pet-run-codex`
+> - `<path-to-reference-theme>` — an existing Clawd on Desk theme to use as structural reference, e.g. `~/pets/baby-potato/clawd-on-desk`
+> - `<output-path>` — where to write the new theme, e.g. `~/Downloads/cheese`
 
 ### What the Agent Does
 
