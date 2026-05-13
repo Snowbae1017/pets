@@ -160,6 +160,58 @@ EOF
 ./install.sh
 ```
 
+## 进阶：基于 Codex 素材生成 Clawd on Desk 主题
+
+Codex 宠物完成后，可以复用生成过程的素材（base 精灵图、参考照片、解码行条带、逐帧图）来生成 [Clawd on Desk](https://github.com/rullerzhou-afk/clawd-on-desk) 主题 — 它需要的是每个状态独立的 APNG 动画，而不是单张精灵图。
+
+### Prompt
+
+在新的 Codex App / Codex CLI 会话（或具备图像生成能力的 Claude Code）中输入：
+
+```
+我已经用 Codex 为我的猫 Cheese 生成了桌面宠物，生成素材在
+~/Downloads/cheese/hatch-pet-run-codex/（包含 base 精灵图、参考照片、
+解码后的行条带、逐帧图片）。
+
+现在我想为同一只宠物生成 Clawd on Desk 主题。请参考
+~/pets/baby-potato/clawd-on-desk/（theme.json + assets/）作为输出格式的
+结构示例，包括状态映射、viewBox、transitions、mini states 等。
+
+为所有 Clawd on Desk 所需状态生成 APNG 动画（idle、thinking、各种 working
+变体、error、sleeping、waking、yawning、dozing、collapsing、notification、
+attention、reactions、mini states）。保持 Cheese 的身份与已通过审核的 Codex
+base 精灵图一致。输出到 ~/Downloads/cheese/clawd-on-desk/。
+```
+
+### Agent 执行流程
+
+1. 读取已有的 Codex 生成素材（base 精灵图、解码帧、参考照片）
+2. 学习参考主题结构（`baby-potato/clawd-on-desk/`）：
+   - `theme.json` 模式（viewBox、states、sleepSequence、workingTiers、miniMode、transitions）
+   - 所需动画状态和命名规范（`<宠物名>-<状态>.apng`）
+   - 素材尺寸和时间参数
+3. 为每个状态生成 APNG 动画，从 canonical base 保持 Cheese 的身份一致性
+4. 生成 `theme.json`，配置状态映射、工作层级、过渡时间
+5. 输出预览图（`cheese-preview.png`）和总览图
+
+### Clawd on Desk 状态列表（完整集）
+
+| 分类 | 状态 |
+|------|------|
+| 核心 | idle、thinking、working-typing、error、sleeping |
+| 睡眠周期 | yawning、dozing、collapsing、waking |
+| 工作变体 | building、carrying、conducting、juggling、sweeping |
+| 反应 | happy（attention）、notification、react-drag、react-poke、react-left |
+| 迷你模式 | mini-idle、mini-alert、mini-happy、mini-enter、mini-peek、mini-crabwalk、mini-sleep |
+
+### 安装
+
+```bash
+cp -r ~/Downloads/cheese/clawd-on-desk/ ~/Library/Application\ Support/clawd-on-desk/themes/cheese/
+```
+
+或使用本仓库的 `./install.sh`。
+
 ## 经验提示
 
 - **参考照片越多，身份还原越好。** Cheese 用了 5 张照片（2张脸、3张身体）— 模型看到的角度越多，越不会臆造特征。
@@ -167,3 +219,4 @@ EOF
 - **Base 精灵图是最重要的一步。** 所有动画行都从它继承身份，所以值得花时间打磨。
 - **色键自动选择**以避免与宠物配色冲突。Cheese 用绿色 `#00FF00`（不是洋红）因为蓝灰色猫不含绿色调。
 - **生成模型很重要。** `gpt-image-2` 对像素风 Q版风格 + 参考图锚定生成效果不错。换成你有的模型即可。
+- **从 Codex 素材生成 Clawd on Desk 更快** — 身份已经锁定，只需要不同的动画状态和 APNG 格式。

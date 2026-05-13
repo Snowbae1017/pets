@@ -164,6 +164,59 @@ Or use the install script from this repo:
 ./install.sh
 ```
 
+## Bonus: Generate Clawd on Desk Theme from Codex Assets
+
+After the Codex pet is done, you can reuse the generation assets (base sprite, references, decoded rows) to produce a [Clawd on Desk](https://github.com/rullerzhou-afk/clawd-on-desk) theme — which needs individual APNG animations per state rather than a single spritesheet.
+
+### Prompt
+
+In a new Codex App / Codex CLI session (or Claude Code with image generation capability):
+
+```
+I've already generated a Codex desktop pet for my cat Cheese. The generation assets
+are in ~/Downloads/cheese/hatch-pet-run-codex/ (includes base sprite, reference photos,
+decoded row strips, and individual frames).
+
+Now I want to generate a Clawd on Desk theme for the same pet. Please reference the
+existing theme in ~/pets/baby-potato/clawd-on-desk/ (theme.json + assets/) as a
+structural example for the output format, state mapping, viewBox, transitions, mini
+states, etc.
+
+Generate APNG animations for all required Clawd on Desk states (idle, thinking,
+working variants, error, sleeping, waking, yawning, dozing, collapsing, notification,
+attention, reactions, mini states). Keep Cheese's identity consistent with the approved
+Codex base sprite. Output to ~/Downloads/cheese/clawd-on-desk/.
+```
+
+### What the Agent Does
+
+1. Reads the existing Codex generation assets (base sprite, decoded frames, references)
+2. Studies the reference theme structure (`baby-potato/clawd-on-desk/`) for:
+   - `theme.json` schema (viewBox, states, sleepSequence, workingTiers, miniMode, transitions)
+   - Required animation states and naming convention (`<pet>-<state>.apng`)
+   - Asset dimensions and timing parameters
+3. Generates APNG animations for each state, preserving Cheese's identity from the canonical base
+4. Produces `theme.json` with appropriate state mappings, working tiers, and transition timings
+5. Outputs a preview image (`cheese-preview.png`) and contact sheet
+
+### Clawd on Desk States (full set)
+
+| Category | States |
+|----------|--------|
+| Core | idle, thinking, working-typing, error, sleeping |
+| Sleep cycle | yawning, dozing, collapsing, waking |
+| Working variants | building, carrying, conducting, juggling, sweeping |
+| Reactions | happy (attention), notification, react-drag, react-poke, react-left |
+| Mini mode | mini-idle, mini-alert, mini-happy, mini-enter, mini-peek, mini-crabwalk, mini-sleep |
+
+### Install
+
+```bash
+cp -r ~/Downloads/cheese/clawd-on-desk/ ~/Library/Application\ Support/clawd-on-desk/themes/cheese/
+```
+
+Or use `./install.sh` from this repo.
+
 ## Tips
 
 - **More reference photos = better identity preservation.** Cheese used 5 photos (2 face, 3 body) — the more angles the model sees, the less it hallucinates features.
@@ -171,3 +224,4 @@ Or use the install script from this repo:
 - **The base sprite is the most important step.** All animation rows derive their identity from it, so invest time getting it right.
 - **Chroma key is auto-selected** to avoid colors in your pet's palette. Cheese uses green `#00FF00` (not magenta) because gray-blue cats don't have green tones.
 - **Generation model matters.** `gpt-image-2` handles the pixel-art chibi style well with reference-grounded generation. Swap in your preferred model if you have one.
+- **Clawd on Desk from Codex assets is much faster** — the identity is already locked in, you just need different animation states and APNG format instead of a spritesheet.
