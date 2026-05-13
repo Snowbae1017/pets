@@ -132,6 +132,8 @@ Restart Clawd on Desk, then activate via **Settings > Theme**.
 
 Or use the built-in hatch-pet skill: type `/pet` then describe what you want.
 
+**Full walkthrough:** See [examples/generate-pet-with-codex.md](examples/generate-pet-with-codex.md) for a step-by-step guide using Cheese as the example (generating from real pet photos with review gates).
+
 ### For Clawd on Desk
 
 1. Run `node scripts/create-theme.js <name>` from the clawd-on-desk repo, or manually create the folder

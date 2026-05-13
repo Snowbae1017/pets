@@ -132,6 +132,8 @@ cp -r baby-potato/clawd-on-desk/ ~/Library/Application\ Support/clawd-on-desk/th
 
 也可以使用内置的 hatch-pet 功能：输入 `/pet` 然后描述你想要的宠物。
 
+**完整教程：** 参见 [examples/generate-pet-with-codex_zh.md](examples/generate-pet-with-codex_zh.md)，以 Cheese 为例展示从真实宠物照片生成桌面宠物的全流程（含评审门控）。
+
 ### Clawd on Desk
 
 1. 在 clawd-on-desk 仓库中运行 `node scripts/create-theme.js <名称>`，或手动创建目录
