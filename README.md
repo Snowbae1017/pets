@@ -11,7 +11,7 @@ My custom desktop pets for [Codex](https://openai.com/codex) and [Clawd on Desk]
 | **baby-potato** | A champagne teddy-bear-like poodle-bichon mix (baby version) |
 | **child-potato** | A champagne teddy-bear-like poodle-bichon mix (grown-up version) |
 | **cheese** | A short-legged, chubby blue-and-white British Shorthair cat |
-| **my-cat** | A fluffy cream-golden long-haired cat |
+| **Yuanbao** | A fluffy cream-golden long-haired cat |
 
 ## Repo Structure
 
