@@ -1,0 +1,614 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-05-15T08:58:44.832009+00:00",
+  "run_dir": "/Users/xueyuan/pets/snowbae-run",
+  "primary_generation_skill": "$imagegen",
+  "jobs": [
+    {
+      "id": "base",
+      "kind": "base-pet",
+      "status": "complete",
+      "prompt_file": "prompts/base-pet.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        }
+      ],
+      "output_path": "decoded/base.png",
+      "depends_on": [],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "recording_owner": "parent",
+      "source_path": "/Users/xueyuan/pets/snowbae-run/generated/base-candidate.png",
+      "source_provenance": "synthetic-test",
+      "source_sha256": "a843cece219c4e29cfa84701b5b146a8f18e54f8a24962c3176a42e5fec8367c",
+      "output_sha256": "a843cece219c4e29cfa84701b5b146a8f18e54f8a24962c3176a42e5fec8367c",
+      "synthetic_test_source": true,
+      "completed_at": "2026-05-15T10:13:51.254879+00:00",
+      "metadata": {
+        "width": 1024,
+        "height": 1024,
+        "mode": "RGB",
+        "format": "PNG"
+      },
+      "canonical_reference_path": "references/canonical-base.png"
+    },
+    {
+      "id": "idle",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/idle.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/idle.png",
+          "role": "layout guide for 6 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base pet"
+        }
+      ],
+      "output_path": "decoded/idle.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "/Users/xueyuan/pets/snowbae-run/generated/rows/idle.png",
+      "source_provenance": "synthetic-test",
+      "source_sha256": "7895efc102b2ab50450d646787667176edef9a89416e8cc8885f39a58cc3d01e",
+      "output_sha256": "7895efc102b2ab50450d646787667176edef9a89416e8cc8885f39a58cc3d01e",
+      "synthetic_test_source": true,
+      "completed_at": "2026-05-15T10:30:16.726148+00:00",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "format": "PNG"
+      }
+    },
+    {
+      "id": "running-right",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/running-right.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/running-right.png",
+          "role": "layout guide for 8 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base pet"
+        }
+      ],
+      "output_path": "decoded/running-right.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "/Users/xueyuan/pets/snowbae-run/generated/rows/running-right.png",
+      "source_provenance": "synthetic-test",
+      "source_sha256": "cefb16973805c7a52295918b55105e14f4a0833e57abeb34c1e81051cfafa3e8",
+      "output_sha256": "cefb16973805c7a52295918b55105e14f4a0833e57abeb34c1e81051cfafa3e8",
+      "synthetic_test_source": true,
+      "completed_at": "2026-05-15T10:32:42.387295+00:00",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "format": "PNG"
+      }
+    },
+    {
+      "id": "running-left",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/running-left.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/running-left.png",
+          "role": "layout guide for 8 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base pet"
+        },
+        {
+          "path": "decoded/running-right.png",
+          "role": "rightward gait reference for leftward row decision"
+        }
+      ],
+      "output_path": "decoded/running-left.png",
+      "depends_on": [
+        "base",
+        "running-right"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "parallelizable_after": [
+        "base",
+        "running-right"
+      ],
+      "mirror_policy": {
+        "may_derive_from": "running-right",
+        "derivation": "horizontal-mirror",
+        "requires_explicit_approval": true,
+        "fallback_generation_skill": "$imagegen"
+      },
+      "recording_owner": "parent",
+      "source_path": "decoded/running-right.png",
+      "source_provenance": "deterministic-mirror",
+      "derived_from": "running-right",
+      "source_sha256": "cefb16973805c7a52295918b55105e14f4a0833e57abeb34c1e81051cfafa3e8",
+      "output_sha256": "5086b1b063702abbe091810b39563bdc81995069e05b455efae734a1325ce39d",
+      "completed_at": "2026-05-15T10:32:58.812789+00:00",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "format": "PNG"
+      },
+      "mirror_decision": {
+        "approved": true,
+        "approved_at": "2026-05-15T10:32:58.812789+00:00",
+        "note": "Snowbae has no readable text or one-way logo, and the running-right row preserves symmetric outfit cues well enough that a horizontal mirror gives correct leftward locomotion while preserving identity."
+      }
+    },
+    {
+      "id": "waving",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/waving.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/waving.png",
+          "role": "layout guide for 4 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base pet"
+        }
+      ],
+      "output_path": "decoded/waving.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "/Users/xueyuan/pets/snowbae-run/generated/rows/waving.png",
+      "source_provenance": "synthetic-test",
+      "source_sha256": "a57bb4427fab874c0a5bc5551f0aab01a70f2f22c010ba24ee67ac3356cc985a",
+      "output_sha256": "a57bb4427fab874c0a5bc5551f0aab01a70f2f22c010ba24ee67ac3356cc985a",
+      "synthetic_test_source": true,
+      "completed_at": "2026-05-15T10:50:03.212121+00:00",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "format": "PNG"
+      }
+    },
+    {
+      "id": "jumping",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/jumping.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/jumping.png",
+          "role": "layout guide for 5 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base pet"
+        }
+      ],
+      "output_path": "decoded/jumping.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "/Users/xueyuan/pets/snowbae-run/generated/rows/jumping.png",
+      "source_provenance": "synthetic-test",
+      "source_sha256": "a5692647996e45ce5a6ce4914009dd3f686aba5fc027f3b460ca87c876f3a604",
+      "output_sha256": "a5692647996e45ce5a6ce4914009dd3f686aba5fc027f3b460ca87c876f3a604",
+      "synthetic_test_source": true,
+      "completed_at": "2026-05-15T10:50:03.305929+00:00",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "format": "PNG"
+      }
+    },
+    {
+      "id": "failed",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/failed.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/failed.png",
+          "role": "layout guide for 8 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base pet"
+        }
+      ],
+      "output_path": "decoded/failed.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "/Users/xueyuan/pets/snowbae-run/generated/rows/failed.png",
+      "source_provenance": "synthetic-test",
+      "source_sha256": "304e5cae29d2aeedec76f1b98b0cfee30141e9ad9def33d11640c6cc113077f1",
+      "output_sha256": "304e5cae29d2aeedec76f1b98b0cfee30141e9ad9def33d11640c6cc113077f1",
+      "synthetic_test_source": true,
+      "completed_at": "2026-05-15T10:50:03.397251+00:00",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "format": "PNG"
+      }
+    },
+    {
+      "id": "waiting",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/waiting.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/waiting.png",
+          "role": "layout guide for 6 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base pet"
+        }
+      ],
+      "output_path": "decoded/waiting.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "/Users/xueyuan/pets/snowbae-run/generated/rows/waiting.png",
+      "source_provenance": "synthetic-test",
+      "source_sha256": "8eb0f386624c58289b496cff7e0654daa6c2f719b3be8d6c168766edbc9bf6ac",
+      "output_sha256": "8eb0f386624c58289b496cff7e0654daa6c2f719b3be8d6c168766edbc9bf6ac",
+      "synthetic_test_source": true,
+      "completed_at": "2026-05-15T10:50:03.500025+00:00",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "format": "PNG"
+      }
+    },
+    {
+      "id": "running",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/running.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/running.png",
+          "role": "layout guide for 6 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base pet"
+        }
+      ],
+      "output_path": "decoded/running.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "/Users/xueyuan/pets/snowbae-run/generated/rows/running.png",
+      "source_provenance": "synthetic-test",
+      "source_sha256": "b9ba9a37f0794dc0599349dc3fb30f3714f3f127863b8b12bc83c18baee0c3a6",
+      "output_sha256": "b9ba9a37f0794dc0599349dc3fb30f3714f3f127863b8b12bc83c18baee0c3a6",
+      "synthetic_test_source": true,
+      "completed_at": "2026-05-15T10:50:03.600327+00:00",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "format": "PNG"
+      }
+    },
+    {
+      "id": "review",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/review.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/review.png",
+          "role": "layout guide for 6 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base pet"
+        }
+      ],
+      "output_path": "decoded/review.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "/Users/xueyuan/pets/snowbae-run/generated/rows/review.png",
+      "source_provenance": "synthetic-test",
+      "source_sha256": "4f4d61c7372583236dd18e83fd6e082f575da64383387bc1e9b5fc2be1c1899a",
+      "output_sha256": "4f4d61c7372583236dd18e83fd6e082f575da64383387bc1e9b5fc2be1c1899a",
+      "synthetic_test_source": true,
+      "completed_at": "2026-05-15T10:50:03.706715+00:00",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "format": "PNG"
+      }
+    }
+  ],
+  "canonical_identity_reference": {
+    "path": "references/canonical-base.png",
+    "source_job": "base",
+    "sha256": "a843cece219c4e29cfa84701b5b146a8f18e54f8a24962c3176a42e5fec8367c",
+    "metadata": {
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "format": "PNG"
+    }
+  }
+}
