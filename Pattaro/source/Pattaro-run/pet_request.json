@@ -1,0 +1,235 @@
+{
+  "pet_id": "pattaro",
+  "display_name": "Pattaro",
+  "description": "A tiny chibi pixel-art desktop companion based on the referenced character.",
+  "created_at": "2026-05-15T14:56:22.970051+00:00",
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cell_width": 192,
+    "cell_height": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "rows": [
+    {
+      "state": "idle",
+      "row": 0,
+      "frames": 6,
+      "purpose": "neutral breathing/blinking loop"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "frames": 8,
+      "purpose": "rightward locomotion loop"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "frames": 8,
+      "purpose": "leftward locomotion loop"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "frames": 4,
+      "purpose": "greeting gesture with raised wave and return"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "frames": 5,
+      "purpose": "anticipation, lift, peak, descent, settle"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "frames": 8,
+      "purpose": "sad, failed, or deflated reaction"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "frames": 6,
+      "purpose": "patient waiting loop with small motion"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "frames": 6,
+      "purpose": "active working/in-progress loop"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "frames": 6,
+      "purpose": "focused inspecting or review loop"
+    }
+  ],
+  "layout_guides": [
+    {
+      "state": "idle",
+      "path": "references/layout-guides/idle.png",
+      "width": 1152,
+      "height": 208,
+      "frames": 6,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "running-right",
+      "path": "references/layout-guides/running-right.png",
+      "width": 1536,
+      "height": 208,
+      "frames": 8,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "running-left",
+      "path": "references/layout-guides/running-left.png",
+      "width": 1536,
+      "height": 208,
+      "frames": 8,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "waving",
+      "path": "references/layout-guides/waving.png",
+      "width": 768,
+      "height": 208,
+      "frames": 4,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "jumping",
+      "path": "references/layout-guides/jumping.png",
+      "width": 960,
+      "height": 208,
+      "frames": 5,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "failed",
+      "path": "references/layout-guides/failed.png",
+      "width": 1536,
+      "height": 208,
+      "frames": 8,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "waiting",
+      "path": "references/layout-guides/waiting.png",
+      "width": 1152,
+      "height": 208,
+      "frames": 6,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "running",
+      "path": "references/layout-guides/running.png",
+      "width": 1152,
+      "height": 208,
+      "frames": 6,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "review",
+      "path": "references/layout-guides/review.png",
+      "width": 1152,
+      "height": 208,
+      "frames": 6,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    }
+  ],
+  "references": [
+    {
+      "path": "/Users/xueyuan/pets/Pattaro/source/Pattaro-run/references/reference-01.jpg",
+      "width": 3648,
+      "height": 5472,
+      "mode": "RGB",
+      "format": "JPEG",
+      "source_path": "/Users/xueyuan/pets/Pattaro/source/reference-photos/20260515-192852.jpg",
+      "copied_path": "/Users/xueyuan/pets/Pattaro/source/Pattaro-run/references/reference-01.jpg"
+    },
+    {
+      "path": "/Users/xueyuan/pets/Pattaro/source/Pattaro-run/references/reference-02.jpg",
+      "width": 3648,
+      "height": 5472,
+      "mode": "RGB",
+      "format": "JPEG",
+      "source_path": "/Users/xueyuan/pets/Pattaro/source/reference-photos/20260515-192936.jpg",
+      "copied_path": "/Users/xueyuan/pets/Pattaro/source/Pattaro-run/references/reference-02.jpg"
+    },
+    {
+      "path": "/Users/xueyuan/pets/Pattaro/source/Pattaro-run/references/reference-03.jpg",
+      "width": 3648,
+      "height": 5472,
+      "mode": "RGB",
+      "format": "JPEG",
+      "source_path": "/Users/xueyuan/pets/Pattaro/source/reference-photos/20260515-192940.jpg",
+      "copied_path": "/Users/xueyuan/pets/Pattaro/source/Pattaro-run/references/reference-03.jpg"
+    }
+  ],
+  "chroma_key": {
+    "hex": "#00FFFF",
+    "rgb": [
+      0,
+      255,
+      255
+    ],
+    "name": "cyan",
+    "selection": "auto",
+    "score": 208.24
+  },
+  "pet_notes": "Human character from the references only. Preserve the signature outfit: red and white gingham top, black skirt with white fluffy trim, red bow collar/choker, twin braids. Keep the character petite, compact, short-legged, chibi with a slightly oversized head and real gentle playful expression. Do not include the Christmas tree, background wall, floor, snow/confetti, ornaments, props, signs, text, or any extra objects. Do not reproduce the blurred face block from the references; make a simple privacy-safe expressive chibi face.",
+  "style_notes": "Codex desktop pet sprite: small pixel-art-adjacent mascot, 8 by 9 frame-slot layout, 192x208 cell logic, compact readable silhouette, chunky dark 1-2 px outline, visible stepped pixel edges, flat cel shading, limited palette, no shadows, no scenery, no gradients, no text, no guide marks.",
+  "house_style": "Codex digital pet sprite style: pixel-art-adjacent low-resolution mascot sprite, compact chibi proportions, chunky whole-body silhouette, thick dark 1-2 px outline, visible stepped/pixel edges, limited palette, flat cel shading with at most one small highlight and one shadow step, simple readable face, tiny limbs, and no detail that disappears at 192x208. Avoid polished illustration, painterly rendering, anime key art, 3D render, vector app-icon polish, glossy lighting, soft gradients, realistic fur or material texture, anti-aliased high-detail edges, and complex tiny accessories.",
+  "primary_generation_skill": "$imagegen",
+  "canonical_identity_reference": {
+    "path": "references/canonical-base.png",
+    "source_job": "base",
+    "sha256": "e1beb7a45d4f5ac892b2a67ff43ce785421b9a937888b2cf7388aaebba211c81",
+    "metadata": {
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "format": "PNG"
+    }
+  }
+}

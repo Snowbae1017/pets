@@ -1,0 +1,605 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-05-15T14:56:22.971770+00:00",
+  "run_dir": "/Users/xueyuan/pets/Pattaro/source/Pattaro-run",
+  "primary_generation_skill": "$imagegen",
+  "jobs": [
+    {
+      "id": "base",
+      "kind": "base-pet",
+      "status": "complete",
+      "prompt_file": "prompts/base-pet.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        }
+      ],
+      "output_path": "decoded/base.png",
+      "depends_on": [],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "recording_owner": "parent",
+      "source_path": "/Users/xueyuan/.codex/generated_images/pattaro-base/ig_pattaro_base.png",
+      "source_provenance": "built-in-imagegen",
+      "source_sha256": "e1beb7a45d4f5ac892b2a67ff43ce785421b9a937888b2cf7388aaebba211c81",
+      "output_sha256": "e1beb7a45d4f5ac892b2a67ff43ce785421b9a937888b2cf7388aaebba211c81",
+      "completed_at": "2026-05-15T15:24:38.134004+00:00",
+      "metadata": {
+        "width": 1024,
+        "height": 1024,
+        "mode": "RGB",
+        "format": "PNG"
+      },
+      "canonical_reference_path": "references/canonical-base.png"
+    },
+    {
+      "id": "idle",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/idle.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/idle.png",
+          "role": "layout guide for 6 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base pet"
+        }
+      ],
+      "output_path": "decoded/idle.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "/Users/xueyuan/.codex/generated_images/pattaro-rows/ig_pattaro_idle.png",
+      "source_provenance": "built-in-imagegen",
+      "source_sha256": "5039cc3d2c1f7f47721089d16d4ea5b0282fbfa1e621d6f682eb959134c3f600",
+      "output_sha256": "5039cc3d2c1f7f47721089d16d4ea5b0282fbfa1e621d6f682eb959134c3f600",
+      "completed_at": "2026-05-15T15:47:59.643337+00:00",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "format": "PNG"
+      }
+    },
+    {
+      "id": "running-right",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/running-right.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/running-right.png",
+          "role": "layout guide for 8 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base pet"
+        }
+      ],
+      "output_path": "decoded/running-right.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "/Users/xueyuan/.codex/generated_images/pattaro-rows/ig_pattaro_running_right.png",
+      "source_provenance": "built-in-imagegen",
+      "source_sha256": "ec4c84ae7f1a8b554c8dbe900cb79a87547f41f57a8cf58a80629ff0f26058b9",
+      "output_sha256": "ec4c84ae7f1a8b554c8dbe900cb79a87547f41f57a8cf58a80629ff0f26058b9",
+      "completed_at": "2026-05-15T15:47:59.756170+00:00",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "format": "PNG"
+      }
+    },
+    {
+      "id": "running-left",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/running-left.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/running-left.png",
+          "role": "layout guide for 8 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base pet"
+        },
+        {
+          "path": "decoded/running-right.png",
+          "role": "rightward gait reference for leftward row decision"
+        }
+      ],
+      "output_path": "decoded/running-left.png",
+      "depends_on": [
+        "base",
+        "running-right"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "parallelizable_after": [
+        "base",
+        "running-right"
+      ],
+      "mirror_policy": {
+        "may_derive_from": "running-right",
+        "derivation": "horizontal-mirror",
+        "requires_explicit_approval": true,
+        "fallback_generation_skill": "$imagegen"
+      },
+      "recording_owner": "parent",
+      "source_path": "decoded/running-right.png",
+      "source_provenance": "deterministic-mirror",
+      "derived_from": "running-right",
+      "source_sha256": "ec4c84ae7f1a8b554c8dbe900cb79a87547f41f57a8cf58a80629ff0f26058b9",
+      "output_sha256": "1bf4cbc2f7927c7d12bbc93e455a781b5808373ab1218499d4d6680607e3941e",
+      "completed_at": "2026-05-15T15:48:15.404454+00:00",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "format": "PNG"
+      },
+      "mirror_decision": {
+        "approved": true,
+        "approved_at": "2026-05-15T15:48:15.404454+00:00",
+        "note": "Pattaro has no readable text, side-specific logo, handed prop, or asymmetric marking that would become semantically wrong when flipped; twin braids, red bow collar, gingham top, and black skirt with white trim remain identity-preserving under horizontal mirror."
+      }
+    },
+    {
+      "id": "waving",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/waving.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/waving.png",
+          "role": "layout guide for 4 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base pet"
+        }
+      ],
+      "output_path": "decoded/waving.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "/Users/xueyuan/.codex/generated_images/pattaro-rows/ig_pattaro_waving_repair_strong.png",
+      "source_provenance": "built-in-imagegen",
+      "source_sha256": "bef73d0cc21eed59de20760a3dc483286856ab9eb8d4e6117ae813e2353214cf",
+      "output_sha256": "bef73d0cc21eed59de20760a3dc483286856ab9eb8d4e6117ae813e2353214cf",
+      "completed_at": "2026-05-15T17:07:51.841910+00:00",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "format": "PNG"
+      }
+    },
+    {
+      "id": "jumping",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/jumping.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/jumping.png",
+          "role": "layout guide for 5 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base pet"
+        }
+      ],
+      "output_path": "decoded/jumping.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "/Users/xueyuan/.codex/generated_images/pattaro-rows/ig_pattaro_jumping.png",
+      "source_provenance": "built-in-imagegen",
+      "source_sha256": "aaa22b882b2c15160637ee3a967eaa11f879c9010848c814fa19e70604c526b2",
+      "output_sha256": "aaa22b882b2c15160637ee3a967eaa11f879c9010848c814fa19e70604c526b2",
+      "completed_at": "2026-05-15T15:55:26.030780+00:00",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "format": "PNG"
+      }
+    },
+    {
+      "id": "failed",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/failed.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/failed.png",
+          "role": "layout guide for 8 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base pet"
+        }
+      ],
+      "output_path": "decoded/failed.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "/Users/xueyuan/.codex/generated_images/pattaro-rows/ig_pattaro_failed_repair_strong.png",
+      "source_provenance": "built-in-imagegen",
+      "source_sha256": "90a70828fba9be5f9f5c76f733aceb1fbc167dd707d8fe7133674dbc7715e985",
+      "output_sha256": "90a70828fba9be5f9f5c76f733aceb1fbc167dd707d8fe7133674dbc7715e985",
+      "completed_at": "2026-05-15T17:07:51.711376+00:00",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "format": "PNG"
+      }
+    },
+    {
+      "id": "waiting",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/waiting.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/waiting.png",
+          "role": "layout guide for 6 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base pet"
+        }
+      ],
+      "output_path": "decoded/waiting.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "/Users/xueyuan/.codex/generated_images/pattaro-rows/ig_pattaro_waiting.png",
+      "source_provenance": "built-in-imagegen",
+      "source_sha256": "53d335278e8d1fdd1dc6e74818d85f095e91806ea8162068b0aeb45128e082af",
+      "output_sha256": "53d335278e8d1fdd1dc6e74818d85f095e91806ea8162068b0aeb45128e082af",
+      "completed_at": "2026-05-15T16:11:35.520123+00:00",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "format": "PNG"
+      }
+    },
+    {
+      "id": "running",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/running.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/running.png",
+          "role": "layout guide for 6 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base pet"
+        }
+      ],
+      "output_path": "decoded/running.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "/Users/xueyuan/.codex/generated_images/pattaro-rows/ig_pattaro_running_repair_strong.png",
+      "source_provenance": "built-in-imagegen",
+      "source_sha256": "01dc6f475c8ce57acaee88762e5dca6730e41948dbb6f685b13021b42ea944bd",
+      "output_sha256": "01dc6f475c8ce57acaee88762e5dca6730e41948dbb6f685b13021b42ea944bd",
+      "completed_at": "2026-05-15T17:07:53.102945+00:00",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "format": "PNG"
+      }
+    },
+    {
+      "id": "review",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/review.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-02.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/reference-03.jpg",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/review.png",
+          "role": "layout guide for 6 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base pet"
+        }
+      ],
+      "output_path": "decoded/review.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "/Users/xueyuan/.codex/generated_images/pattaro-rows/ig_pattaro_review.png",
+      "source_provenance": "built-in-imagegen",
+      "source_sha256": "a51607f53d4048d0456d84f887bd6a63ee435c64d66802170d5539546706ffc0",
+      "output_sha256": "a51607f53d4048d0456d84f887bd6a63ee435c64d66802170d5539546706ffc0",
+      "completed_at": "2026-05-15T15:59:35.951863+00:00",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "format": "PNG"
+      }
+    }
+  ],
+  "canonical_identity_reference": {
+    "path": "references/canonical-base.png",
+    "source_job": "base",
+    "sha256": "e1beb7a45d4f5ac892b2a67ff43ce785421b9a937888b2cf7388aaebba211c81",
+    "metadata": {
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "format": "PNG"
+    }
+  }
+}

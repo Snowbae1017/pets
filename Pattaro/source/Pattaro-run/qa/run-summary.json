@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "run_dir": "/Users/xueyuan/pets/Pattaro/source/Pattaro-run",
+  "spritesheet": "/Users/xueyuan/pets/Pattaro/source/Pattaro-run/final/spritesheet.webp",
+  "validation": "/Users/xueyuan/pets/Pattaro/source/Pattaro-run/final/validation.json",
+  "contact_sheet": "/Users/xueyuan/pets/Pattaro/source/Pattaro-run/qa/contact-sheet.png",
+  "review": "/Users/xueyuan/pets/Pattaro/source/Pattaro-run/qa/review.json",
+  "videos": "/Users/xueyuan/pets/Pattaro/source/Pattaro-run/qa/videos",
+  "package": "/Users/xueyuan/.codex/pets/pattaro"
+}

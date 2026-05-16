@@ -3,3 +3,7 @@
 .venv/
 snowbae/source/reference-photos/
 snowbae/source/snowbae-run/references/reference-*.jpg
+Pattaro/source/reference-photos/
+Pattaro/source/Pattaro-run/references/reference-*.jpg
+.idea/
+AGENTS.md
